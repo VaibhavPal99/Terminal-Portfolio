@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 
 interface Command {
@@ -13,7 +12,7 @@ type CommandMap = Record<string, Command>;
 function App() {
   const username = "guest";
   const hostname = "vaibhav.dev";
-  const [history, setHistory] = useState<{ command: string, output: string}[]>([]);
+  const [history, setHistory] = useState<{ command: string, output: React.ReactNode }[]>([]);
   const [input, setInput] = useState('');
   const [commands, setCommands] = useState<CommandMap>({});
 
@@ -54,7 +53,7 @@ function App() {
         return;
       }
 
-      let output: string | JSX.Element;
+      let output: React.ReactNode;
       if (!cmdKey) {
         output = `Command not found: ${trimmed}`;
       } else if (cmdKey === "help") {
@@ -99,9 +98,7 @@ function App() {
             <span className="prompt">{username}@{hostname}:~$</span>
             <span className="command"> {entry.command}</span>
             <pre className="output">
-              {typeof entry.output === 'string'
-                ? entry.output
-                : entry.output}
+              {entry.output}
             </pre>
           </div>
         ))}
