@@ -1,0 +1,48 @@
+{
+    "help": {
+      "description": "Lists all available commands with their descriptions.",
+      "alias": ["help", "commands", "ls"]
+    },
+
+    "whoami": {
+      "description": "Displays the current logged-in user and some basic info about them.",
+      "output": "Name: Vaibhav Pal\nLocation: Lucknow, India\nEmail: vaibhavpal9935@gmail.com",
+      "alias": ["whoami", "user", "me"]
+    },
+    "about": {
+      "description": "Gives a more detailed bio about the user.",
+      "output": "Hi, I'm Vaibhav! I'm passionate about coding and building web applications. Currently, I'm focused on improving my skills and learning new technologies.",
+      "alias": ["about", "bio", "intro"]
+    },
+    "education": {
+      "description": "Displays the user's education background.",
+      "output": "B.Tech in Computer Science & Engineering (CSE)\nBabu Banarasi Das Institute of Technology and Management, Lucknow, India\nExpected Graduation: 2025",
+      "alias": ["education", "degree", "studies"]
+    },
+    "skills": {
+      "description": "Displays the user's technical skills.",
+      "output": "Languages: TypeScript, JavaScript, Python, C++\nFrameworks: React, Node.js, Express\nDatabase: PostgreSQL, MongoDB, Redis\nOthers: Git, Docker, RESTful APIs",
+      "alias": ["skills", "technologies", "tools"]
+    },
+    "projects": {
+      "description": "Shows a list of the user's projects.",
+      "output": "1. CompileTime - An online code execution platform\n   Live: https://compile-time-beta.vercel.app\n   Code: https://github.com/vaibhavpal99/compiletime\n\n2. Doodle Meet - A collaborative whiteboard app\n   Live: https://duddle-meet.vercel.app\n   Code: https://github.com/vaibhavpal99/doodlemeet\n\n3. Orbit - A full-stack social media app\n   Live: https://orbit-blond.vercel.app\n   Code: https://github.com/vaibhavpal99/orbit\n\n4. Blogsphere - A medium-style blogging app\n   Live: https://blogsphere0.vercel.app\n   Code: https://github.com/vaibhavpal99/blogsphere",
+      "alias": ["projects", "work", "portfolio"]
+    },
+    "codingprofiles": {
+      "description": "Displays links to the user's coding profiles.",
+      "output": "Codeforces: https://codeforces.com/profile/VaibhavPal99\n CodeChef: https://www.codechef.com/users/vaibhavpal9935\n LeetCode: https://leetcode.com/u/VaibhavPal99",
+      "alias": ["codingprofiles", "profiles", "devprofiles"]
+    },
+    "github": {
+      "description": "Displays the user's GitHub profile link.",
+      "output": "GitHub: https://github.com/vaibhavpal99",
+      "alias": ["github", "git", "repo"]
+    },
+    "contact": {
+      "description": "Displays the user's contact details.",
+      "output": "Email: vaibhavpal9935@gmail.com\nLinkedIn: https://linkedin.com/in/vaibhavpal99\n",
+      "alias": ["contact", "email", "reachout"]
+    }
+  }
+  

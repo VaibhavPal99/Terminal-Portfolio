@@ -1,0 +1,108 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.container {
+  padding: 2rem 1.5rem;
+  max-width: none;
+  margin: 0;
+}
+
+.banner pre {
+  color: #79c0ff;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.terminal {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.prompt {
+  color: #8b949e;
+  font-weight: bold;
+}
+
+.command {
+  color: #58a6ff;
+  font-weight: 500;
+}
+
+.output {
+  white-space: pre-wrap;
+  color: #c9d1d9;
+  margin: 0.5rem 0 1.2rem 1.5rem;
+}
+
+.help-desc {
+  color: #a5d6ff;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+.input-line {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: #e6edf3;
+  font-family: inherit;
+  font-size: 1.05rem;
+  outline: none;
+  width: 100%;
+  padding: 0.25rem;
+  caret-color: #58a6ff;
+}
+
+input::placeholder {
+  color: #6e7681;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .banner pre {
+    font-size: 0.95rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+}
+
+.output a {
+  color: #3bc5e7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.output a:hover {
+  color: #79c0ff;
+  border-bottom-color: #79c0ff;
+}
+
